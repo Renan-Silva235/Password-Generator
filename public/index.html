@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+</head>
+
+<body>
+
+  <section class="container">
+    <h1 class="title">Gerador de Senhas</h1>
+
+    <div class="password-field">
+      <div id="field"></div>
+      <button class="copy-button">
+        <img class="icon"
+          src="https://static.vecteezy.com/ti/vetor-gratis/p1/9292214-botao-copiar-duplicado-icone-isolado-no-circulo-vetor.jpg"
+          alt="">
+      </button>
+    </div>
+
+
+    <h1 class="main-title">Seleciona as opções</h1>
+
+    <form action="">
+
+      <div class="amount-div">
+        <label for="amount-characters">Quantidade de Caracteres</label>
+        <input type="number" id="amount-characters">
+      </div>
+
+      <div class="add-div">
+        <label for="add-numbers">Adicionar Números</label>
+        <input type="checkbox" id="add-numbers" value="true">
+      </div>
+
+      <div class="upper-div">
+        <label for="upper-letters">Letras maiúsculas</label>
+        <input type="checkbox" id="upper-letters" value="true">
+      </div>
+
+      <div class="lower-div">
+        <label for="lower-letters">Letras minúsculas</label>
+        <input type="checkbox" id="lower-letters" value="true">
+      </div>
+
+      <div class="special-div">
+        <label for="specials-characterers">caracteres especiais</label>
+        <input type="checkbox" id="specials-characterers" value="true">
+      </div>
+
+      <button id="submit-form" type="submit">Gerar Senha</button>
+      <button id="reset" type="reset">Limpar</button>
+    </form>
+
+
+    <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
