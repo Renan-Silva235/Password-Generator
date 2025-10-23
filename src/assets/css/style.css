@@ -155,3 +155,17 @@ input[type="number"]:focus{
   height: 100%;
 }
 
+
+
+.message{
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  margin: 15px;
+  height: 35px;
+  transform: translateX(-50);
+  color: var(--primary-color);
+}
+
+
+

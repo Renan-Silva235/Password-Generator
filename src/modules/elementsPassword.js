@@ -56,4 +56,38 @@ export function specialCharacters() {
     return characters[randomIndex];
 }
 
+function showMessage(text) {
+    const container = document.querySelector(".container");
+    const divShowMessage = container.querySelector("#showMessageCopy");
+    const msg = document.createElement("p");
+    msg.textContent = text;
+    msg.classList.add("message");
+    divShowMessage.appendChild(msg);
+
+    setTimeout(() => {
+        msg.remove();
+    }, 2000);
+}
+
+
+
+export default function buttonCopyPassword(){
+    const copyButton = document.querySelector(".copy-button");
+    copyButton.addEventListener("click", () => {
+        const passwordElement = document.querySelector(".password");
+        if (!passwordElement) return;
+
+
+        const password = passwordElement.textContent;
+        navigator.clipboard.writeText(password)
+            .then(() => {
+                showMessage("Senha copiada com sucesso!");
+            })
+            .catch(() => {
+                showMessage("Erro ao copiar a senha!");
+            });
+        });
+}
+
+
 
